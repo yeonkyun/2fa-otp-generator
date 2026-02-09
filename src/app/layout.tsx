@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "2FA OTP 생성기",
-  description: "2FA Key로 OTP 코드를 생성하는 웹 앱",
+  description: "2FA Key로 OTP 코드 생성",
 };
 
 export default function RootLayout({
