@@ -15,7 +15,7 @@ export default function CountdownTimer({ remainingSeconds, progress }: Countdown
   const offset = CIRCUMFERENCE * (1 - progress);
 
   return (
-    <div className="relative h-20 w-20 shrink-0">
+    <div className="relative h-24 w-24 shrink-0">
       <svg viewBox="0 0 80 80" className="h-full w-full">
         {/* Background circle */}
         <circle
@@ -43,7 +43,7 @@ export default function CountdownTimer({ remainingSeconds, progress }: Countdown
         />
       </svg>
       <span
-        className={`absolute inset-0 flex items-center justify-center font-mono text-lg font-bold ${textColor}`}
+        className={`absolute inset-0 flex items-center justify-center font-mono text-xl font-bold ${textColor}`}
       >
         {remainingSeconds}
       </span>

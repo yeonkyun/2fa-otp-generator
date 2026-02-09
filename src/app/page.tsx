@@ -62,12 +62,12 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen items-center justify-center bg-zinc-50 px-4 dark:bg-zinc-950">
       <ThemeToggle />
-      <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg dark:bg-zinc-900 dark:shadow-zinc-800/20">
+      <div className="w-full max-w-lg rounded-2xl bg-white p-8 shadow-lg dark:bg-zinc-900 dark:shadow-zinc-800/20">
         <div className="flex flex-col items-center gap-2 text-center">
-          <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+          <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
             2FA OTP 생성기
           </h1>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+          <p className="text-base text-zinc-500 dark:text-zinc-400">
             2FA Key를 입력하면 OTP 코드를 생성합니다
           </p>
         </div>

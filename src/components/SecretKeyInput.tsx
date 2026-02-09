@@ -16,7 +16,7 @@ export default function SecretKeyInput({ value, onChange, error }: SecretKeyInpu
     <div className="flex flex-col gap-2">
       <label
         htmlFor="secret-key"
-        className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
+        className="text-base font-medium text-zinc-700 dark:text-zinc-300"
       >
         2FA Key
       </label>
@@ -26,7 +26,7 @@ export default function SecretKeyInput({ value, onChange, error }: SecretKeyInpu
         value={value}
         onChange={handleChange}
         placeholder="JBSWY3DPEHPK3PXP"
-        className={`w-full rounded-xl px-4 py-3 font-mono text-lg tracking-wider
+        className={`w-full rounded-xl px-4 py-3 font-mono text-base tracking-wider
           bg-zinc-100 dark:bg-zinc-800
           text-zinc-900 dark:text-zinc-100
           placeholder:text-zinc-400 dark:placeholder:text-zinc-500

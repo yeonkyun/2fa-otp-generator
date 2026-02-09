@@ -23,7 +23,7 @@ export default function OtpDisplay({ code }: OtpDisplayProps) {
       onClick={handleCopy}
       className="group relative cursor-pointer select-none transition-transform hover:scale-105"
     >
-      <p className="whitespace-nowrap font-mono text-4xl font-bold tracking-widest text-zinc-900 dark:text-zinc-100 sm:text-5xl">
+      <p className="whitespace-nowrap font-mono text-5xl font-bold tracking-widest text-zinc-900 dark:text-zinc-100 sm:text-6xl">
         {formattedCode}
       </p>
       <span
