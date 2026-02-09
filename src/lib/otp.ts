@@ -3,19 +3,19 @@ import type { ValidationResult } from "./types";
 
 export function validateBase32(secret: string): ValidationResult {
   if (!secret || secret.trim().length === 0) {
-    return { isValid: false, error: "Secret key is required" };
+    return { isValid: false, error: "2FA Key를 입력해주세요" };
   }
 
   const cleaned = secret.replace(/\s/g, "").toUpperCase();
   const base32Regex = /^[A-Z2-7=]+$/;
 
   if (!base32Regex.test(cleaned)) {
-    return { isValid: false, error: "Invalid Base32 characters detected" };
+    return { isValid: false, error: "올바르지 않은 2FA Key입니다" };
   }
 
   const withoutPadding = cleaned.replace(/=+$/, "");
   if (withoutPadding.length < 1) {
-    return { isValid: false, error: "Secret key is too short" };
+    return { isValid: false, error: "2FA Key가 너무 짧습니다" };
   }
 
   return { isValid: true };
