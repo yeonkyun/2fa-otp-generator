@@ -18,7 +18,7 @@ export default function SecretKeyInput({ value, onChange, error }: SecretKeyInpu
         htmlFor="secret-key"
         className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
       >
-        Secret Key (Base32)
+        2FA Key
       </label>
       <input
         id="secret-key"

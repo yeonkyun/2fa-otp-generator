@@ -35,7 +35,7 @@ export default function Home() {
       setRemainingSeconds(getRemainingSeconds());
       setProgress(getProgress());
     } catch {
-      setError("OTP 생성에 실패했습니다. Secret Key를 확인해주세요.");
+      setError("OTP 생성에 실패했습니다. 2FA Key를 확인해주세요.");
       setCode("");
     }
   }, [secretKey]);
@@ -65,10 +65,10 @@ export default function Home() {
       <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg dark:bg-zinc-900 dark:shadow-zinc-800/20">
         <div className="flex flex-col items-center gap-2 text-center">
           <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
-            2FA OTP Generator
+            2FA OTP 생성기
           </h1>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Secret Key를 입력하면 OTP 코드를 생성합니다
+            2FA Key를 입력하면 OTP 코드를 생성합니다
           </p>
         </div>
 
@@ -92,10 +92,8 @@ export default function Home() {
           </div>
         )}
 
-        <p className="mt-8 text-center text-xs text-zinc-400 dark:text-zinc-500">
-          모든 연산은 브라우저에서 처리되며, Secret Key는 서버로 전송되지
-          않습니다.
-        </p>
+
+
       </div>
     </div>
   );
